@@ -1030,12 +1030,10 @@ img {
 .product-name {
     font-weight: 600;
     font-size: 15px;
-    margin-bottom: 4px;
 }
 
 .product-qty {
     font-size: 14px;
-    color: #666;
 }
 
 /* Footer (Total & Button Track) */

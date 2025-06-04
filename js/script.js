@@ -1,20 +1,20 @@
 const productsList = [
-    { id: 1, name: 'ROLAROLA DRESS', price: 250000, image: 'assets/img/img-product-1.png', description: 'Dress bergaya kasual dengan potongan longgar yang nyaman untuk dipakai seharian.', size: 'S M L' },
-    { id: 2, name: 'JULIUS SHIRT', price: 260000, image: 'assets/img/img-product-2.png', description: 'Kemeja lengan panjang dengan desain simpel dan bahan adem yang cocok untuk tampilan formal maupun santai.', size: 'M L XL' },
-    { id: 3, name: 'CARRIERE DRESS', price: 270000, image: 'assets/img/img-product-3.png', description: 'Gaun elegan dengan siluet ramping yang menonjolkan sisi feminin Anda.', size: 'S M L' },
-    { id: 4, name: 'STELLA SKIRT', price: 280000, image: 'assets/img/img-product-4.png', description: 'Rok A-line dengan detail lipit yang manis dan cocok dipadukan dengan atasan apa saja.', size: 'S M' },
-    { id: 5, name: 'ELLE KNIT TOP', price: 290000, image: 'assets/img/img-product-5.png', description: 'Atasan rajut lembut dengan potongan crop yang stylish untuk gaya kasual kekinian.', size: 'M L' },
-    { id: 6, name: 'SENYA TUNIC', price: 300000, image: 'assets/img/img-product-6.png', description: 'Tunik panjang dengan motif lembut yang cocok dikenakan dengan celana atau legging.', size: 'S M L' },
-    { id: 7, name: 'ELOISE BLAZER', price: 310000, image: 'assets/img/img-product-7.png', description: 'Blazer formal dengan desain modern, cocok untuk ke kantor atau acara resmi.', size: 'M L XL' },
-    { id: 8, name: 'REANNA SHIRT', price: 320000, image: 'assets/img/img-product-8.png', description: 'Kemeja lengan pendek dengan bahan katun ringan, cocok untuk tampilan sehari-hari.', size: 'S M' },
-    { id: 9, name: 'INHANNA SKIRT', price: 330000, image: 'assets/img/img-product-9.png', description: 'Rok midi dengan detail lipit halus, memberikan kesan anggun dan feminin.', size: 'M L' },
-    { id: 10, name: 'ELINA DRESS', price: 340000, image: 'assets/img/img-product-10.png', description: 'Dress dengan motif floral yang cantik, cocok untuk acara semi-formal atau santai.', size: 'S M L' },
-    { id: 11, name: 'LEARONA DRESS', price: 350000, image: 'assets/img/img-product-11.png', description: 'Gaun panjang dengan aksen ruffle dan bahan flowy yang memberikan kesan elegan.', size: 'M L' },
-    { id: 12, name: 'HEYNA PARKA', price: 360000, image: 'assets/img/img-product-12.png', description: 'Jaket parka dengan bahan tahan angin, ideal untuk musim hujan atau udara dingin.', size: 'L XL' },
-    { id: 13, name: 'CANLY TOP', price: 370000, image: 'assets/img/img-product-13.png', description: 'Atasan simpel dengan potongan boxy yang cocok dipadukan dengan celana jeans.', size: 'S M L' },
-    { id: 14, name: 'DEAR DRESS', price: 380000, image: 'assets/img/img-product-14.png', description: 'Dress minimalis dengan warna netral yang bisa digunakan untuk berbagai kesempatan.', size: 'M L XL' },
-    { id: 15, name: 'NAVIEL OUTER', price: 390000, image: 'assets/img/img-product-15.png', description: 'Outer ringan dengan detail simpel yang bisa mempermanis gaya harian Anda.', size: 'All Size' },
-    { id: 16, name: 'EVERYDAY SHIRT', price: 400000, image: 'assets/img/img-product-16.png', description: 'Kemeja serbaguna untuk aktivitas harian dengan desain clean dan bahan nyaman.', size: 'S M L XL' },
+    { id: 1, name: 'ROLAROLA DRESS', price: 250000, image: '../assets/img/img-product-1.png', description: 'Dress bergaya kasual dengan potongan longgar yang nyaman untuk dipakai seharian.', size: 'S M L' },
+    { id: 2, name: 'JULIUS SHIRT', price: 260000, image: '../assets/img/img-product-2.png', description: 'Kemeja lengan panjang dengan desain simpel dan bahan adem yang cocok untuk tampilan formal maupun santai.', size: 'M L XL' },
+    { id: 3, name: 'CARRIERE DRESS', price: 270000, image: '../assets/img/img-product-3.png', description: 'Gaun elegan dengan siluet ramping yang menonjolkan sisi feminin Anda.', size: 'S M L' },
+    { id: 4, name: 'STELLA SKIRT', price: 280000, image: '../assets/img/img-product-4.png', description: 'Rok A-line dengan detail lipit yang manis dan cocok dipadukan dengan atasan apa saja.', size: 'S M' },
+    { id: 5, name: 'ELLE KNIT TOP', price: 290000, image: '../assets/img/img-product-5.png', description: 'Atasan rajut lembut dengan potongan crop yang stylish untuk gaya kasual kekinian.', size: 'M L' },
+    { id: 6, name: 'SENYA TUNIC', price: 300000, image: '../assets/img/img-product-6.png', description: 'Tunik panjang dengan motif lembut yang cocok dikenakan dengan celana atau legging.', size: 'S M L' },
+    { id: 7, name: 'ELOISE BLAZER', price: 310000, image: '../assets/img/img-product-7.png', description: 'Blazer formal dengan desain modern, cocok untuk ke kantor atau acara resmi.', size: 'M L XL' },
+    { id: 8, name: 'REANNA SHIRT', price: 320000, image: '../assets/img/img-product-8.png', description: 'Kemeja lengan pendek dengan bahan katun ringan, cocok untuk tampilan sehari-hari.', size: 'S M' },
+    { id: 9, name: 'INHANNA SKIRT', price: 330000, image: '../assets/img/img-product-9.png', description: 'Rok midi dengan detail lipit halus, memberikan kesan anggun dan feminin.', size: 'M L' },
+    { id: 10, name: 'ELINA DRESS', price: 340000, image: '../assets/img/img-product-10.png', description: 'Dress dengan motif floral yang cantik, cocok untuk acara semi-formal atau santai.', size: 'S M L' },
+    { id: 11, name: 'LEARONA DRESS', price: 350000, image: '../assets/img/img-product-11.png', description: 'Gaun panjang dengan aksen ruffle dan bahan flowy yang memberikan kesan elegan.', size: 'M L' },
+    { id: 12, name: 'HEYNA PARKA', price: 360000, image: '../assets/img/img-product-12.png', description: 'Jaket parka dengan bahan tahan angin, ideal untuk musim hujan atau udara dingin.', size: 'L XL' },
+    { id: 13, name: 'CANLY TOP', price: 370000, image: '../assets/img/img-product-13.png', description: 'Atasan simpel dengan potongan boxy yang cocok dipadukan dengan celana jeans.', size: 'S M L' },
+    { id: 14, name: 'DEAR DRESS', price: 380000, image: '../assets/img/img-product-14.png', description: 'Dress minimalis dengan warna netral yang bisa digunakan untuk berbagai kesempatan.', size: 'M L XL' },
+    { id: 15, name: 'NAVIEL OUTER', price: 390000, image: '../assets/img/img-product-15.png', description: 'Outer ringan dengan detail simpel yang bisa mempermanis gaya harian Anda.', size: 'All Size' },
+    { id: 16, name: 'EVERYDAY SHIRT', price: 400000, image: '../assets/img/img-product-16.png', description: 'Kemeja serbaguna untuk aktivitas harian dengan desain clean dan bahan nyaman.', size: 'S M L XL' },
 ];
 
 
@@ -83,10 +83,10 @@ function loadDetail() {
 
     // Buat thumbnails dari gambar statis, misal kamu punya 5 thumbnails
     const staticThumbnails = [
-        'assets/img/img-thumb-1.png',
-        'assets/img/img-thumb-2.png',
-        'assets/img/img-thumb-3.png',
-        'assets/img/img-thumb-4.png',
+        '../assets/img/img-thumb-1.png',
+        '../assets/img/img-thumb-2.png',
+        '../assets/img/img-thumb-3.png',
+        '../assets/img/img-thumb-4.png',
     ];
 
     // Buat HTML thumbnails, yang pertama active
@@ -97,11 +97,11 @@ function loadDetail() {
 
     // Color options static
     const colorOptions = [
-        { image: 'assets/img/img-color-1.png', label: 'Black' },
-        { image: 'assets/img/img-color-2.png', label: 'Vanilla' },
-        { image: 'assets/img/img-color-3.png', label: 'Sand' },
-        { image: 'assets/img/img-color-4.png', label: 'Seaweed' },
-        { image: 'assets/img/img-color-5.png', label: 'Charcoal' },
+        { image: '../assets/img/img-color-1.png', label: 'Black' },
+        { image: '../assets/img/img-color-2.png', label: 'Vanilla' },
+        { image: '../assets/img/img-color-3.png', label: 'Sand' },
+        { image: '../assets/img/img-color-4.png', label: 'Seaweed' },
+        { image: '../assets/img/img-color-5.png', label: 'Charcoal' },
     ];
 
     const colorsHtml = colorOptions
@@ -401,7 +401,7 @@ function loadOrderHistory() {
 
         orderEl.innerHTML = `
             <div class="order-header">
-                <div class="order-id">Order ID: ${order.username}${order.id}</div>
+                <div class="order-id">Order ID: ${order.username}-${order.id}</div>
                 <div class="order-status">
                     <select onchange="updateOrderStatus(${order.id}, this.value)" value="${order.status}">
                        ${["Confirmed", "Packed", "Shipped", "Delivered", "Returned", "Cancelled"]
@@ -422,7 +422,7 @@ function loadOrderHistory() {
                         <img src="${item.image}" alt="${item.name}" class="product-image" />
                         <div class="product-info">
                             <div class="product-name">${item.name}</div>
-                            <div class="product-qty">Qty: ${item.qty}</div>
+                            <div class="product-qty">${item.qty} x ${formatRupiah(item.price)}</div>
                         </div>
                     </div>
                 `).join('')}
@@ -432,12 +432,33 @@ function loadOrderHistory() {
                 <div class="total-text">Total:</div>
                 <div class="total-price">${formatRupiah(order.total)}</div>
                 <button class="track-btn" onclick="trackOrder(${order.id})">Track</button>
-                <img src="assets/svg/ic-dots.svg" alt="Track Icon" class="track-icon" />
+                <img src="../assets/svg/ic-dots.svg" alt="Track Icon" class="track-icon" />
             </div>
         `;
         historyDiv.appendChild(orderEl);
     });
 }
+
+function trackOrder(orderId) {
+    let history = JSON.parse(localStorage.getItem('orderHistory')) || [];
+    const order = history.find(o => o.id === orderId);
+    if (!order) return;
+
+    // Update filter/tab ke status order yang di-track
+    currentFilter = order.status;
+
+    // Update active class pada tab-bar
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-status') === currentFilter);
+    });
+
+    // Load ulang daftar order dengan filter baru
+    loadOrderHistory();
+
+    // Opsional: aksi lain misal alert atau navigasi detail tracking
+    alert(`Tracking order ID: ${order.id} dengan status: ${order.status}`);
+}
+
 
 
 
@@ -462,15 +483,11 @@ function logout() {
     localStorage.removeItem('username');
     localStorage.removeItem('cart');
     // Jika mau hapus order history habis logout uncomment ini
-    localStorage.removeItem('orderHistory');
+    // localStorage.removeItem('orderHistory');
 
     // Arahkan ke halaman index.html (halaman awal)
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
 }
-
-
-
-
 
 
 
