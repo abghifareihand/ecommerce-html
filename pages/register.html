@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<body onload="checkLogin()">
+<body>
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -19,31 +19,25 @@
 
     </nav>
 
-    <!-- Jika belum login -->
-    <div class="login-form" id="loginContainer">
-        <h2>LOGIN</h2>
+    <div class="login-form">
+        <h2>SIGN UP</h2>
         <form>
             <input type="username" id="username" placeholder="USERNAME" required />
-            <a href="forgot.html" class="forgot-password">Forgot your password?</a>
-            <div class="action-row">
-                <button class="btn-login" type="button" onclick="login()">Login</button>
-                <label class="checkbox-container">
-                    <input type="checkbox" id="remember" />
-                    Remember me
-                </label>
-            </div>
+            <input type="email" id="email" placeholder="EMAIL" required />
+            <input type="password" id="password" placeholder="PASSWORD" required />
+            <label class="checkbox-container">
+                <input type="checkbox" id="news" />
+                I want to receive news, communications and promotions from LIVOU
+            </label>
+            <label class="checkbox-container">
+                <input type="checkbox" id="terms" />
+                I agree to the Terms of Service and Privacy Policy
+            </label>
+            <button class="btn-signup">CREATE ACCOUNT</button>
+            <div class="back-to-login"><a href="login.html">Back to Login</a></div>
         </form>
-        <div class="signup-text">
-            Not a member yet? <a href="register.html">Sign Up</a> now </div>
-        <div class="back-to-login"><a href="../index.html">Back to Home</a></div>
     </div>
 
-    <!-- Jika sudah login -->
-    <div class="login-form" id="userContainer" style="display: none;">
-        <h2>Congratulations, <span id="loggedInUser"></span> !!</h2>
-        <button class="btn-logout" onclick="logout()">Logout</button>
-        <div class="back-to-login"><a href="../index.html">Back to Home</a></div>
-    </div>
 
     <!-- Footer -->
     <footer class="footer">
