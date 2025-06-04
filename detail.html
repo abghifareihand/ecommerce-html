@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadDetail()">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="home.html" class="logo">LIVOU</a>
+        </div>
+        <div class="navbar-right">
+            <a href="cart.html" class="nav-item cart-icon" style="display: flex; align-items: center;">
+                <img src="assets/svg/ic-cart.svg" alt="Cart Icon" />
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div id="productDetail">
+            <div class="left">
+                <img id="mainImage" src="..." alt="Produk" />
+                <div class="thumbnails">
+                    <img src="" alt="Thumbnail 1" />
+                    <img src="" alt="Thumbnail 2" />
+                    <img src="" alt="Thumbnail 3" />
+                    <img src="" alt="Thumbnail 4" />
+                    <img src="" alt="Thumbnail 5" />
+                </div>
+            </div>
+            <div class="right">
+                <h2>Nama Produk</h2>
+                <p>Deskripsi produk singkat...</p>
+                <div class="color-info">
+                    <strong>Color:</strong> Merah, Biru, Hijau
+                </div>
+                <div class="buttons">
+                    <button class="buy-now">Buy Now</button>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-center">
+            esteria &copy; 2025
+        </div>
+        <div class="footer-right">
+            <a href="#" aria-label="Shopee" class="social-icon shopee"></a>
+            <a href="#" aria-label="TikTok" class="social-icon tiktok"></a>
+            <a href="#" aria-label="Instagram" class="social-icon instagram"></a>
+            <a href="#" aria-label="Facebook" class="social-icon facebook"></a>
+            <a href="#" aria-label="WhatsApp" class="social-icon whatsapp"></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

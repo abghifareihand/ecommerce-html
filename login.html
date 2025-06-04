@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- <body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter username">
+        <button onclick="login()">Login</button>
+        <button onclick="clearAllData()()">Reset</button>
+    <script src="js/script.js"></script>
+</body> -->
+
+<body onload="checkLogin()">
+    <div class="container" id="loginContainer">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter username">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="container" id="userContainer" style="display: none;">
+        <h2>Welcome, <span id="loggedInUser"></span></h2>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-center">
+            esteria &copy; 2025
+        </div>
+        <div class="footer-right">
+            <a href="#" aria-label="Shopee" class="social-icon shopee"></a>
+            <a href="#" aria-label="TikTok" class="social-icon tiktok"></a>
+            <a href="#" aria-label="Instagram" class="social-icon instagram"></a>
+            <a href="#" aria-label="Facebook" class="social-icon facebook"></a>
+            <a href="#" aria-label="WhatsApp" class="social-icon whatsapp"></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

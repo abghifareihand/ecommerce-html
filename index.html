@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <!-- Tombol toggle sidebar di samping logo -->
+            <label for="sidebar-toggle" class="sidebar-toggle-btn">&#9776;</label>
+            <a href="index.html" class="logo">LIVOU</a>
+
+        </div>
+        <div class="navbar-right">
+            <a href="home.html" class="nav-item">SEARCH</a>
+            <a href="cart.html" class="nav-item">CART</a>
+            <a href="order.html" class="nav-item">ORDER</a>
+            <a href="login.html" class="nav-item">LOGIN</a>
+        </div>
+    </nav>
+
+    <!-- Toggle checkbox -->
+    <input type="checkbox" id="sidebar-toggle" style="display:none" />
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="#">NEW COLLECTIONS</a></li>
+            <li><a href="#bestseller">BEST SELLER</a></li>
+            <li><a href="#rayaseries">RAYA SERIES</a></li>
+            <li><a href="#earlydays">EARLY DAYS</a></li>
+            <li><a href="#">DAILY ESSENTIALS</a></li>
+            <li><a href="#foryou">FOR EVERY YOU</a></li>
+            <li><a href="#">CHOOSE YOUR STYLE</a></li>
+
+            <div class="sidebar-bottom">
+                <a href="#">HELP</a>
+                <a href="#">ID | EN</a>
+            </div>
+        </ul>
+
+    </div>
+
+
+
+    <!-- Content -->
+    <div class="container">
+        <div class="image-list">
+            <img src="assets/img/img-main-1.png" alt="Image 1">
+            <img src="assets/img/img-main-2.png" alt="Image 2">
+        </div>
+        <!-- Section BEST SELLER -->
+        <h2 id="bestseller" class="image-with-title">BEST SELLER</h2>
+        <div class="image-list">
+            <img src="assets/img/img-main-3.png" alt="Best Seller">
+        </div>
+        <!-- Section RAYA SERIES -->
+        <h2 id="rayaseries" class="image-with-title">RAYA SERIES</h2>
+        <div class="image-list">
+            <img src="assets/img/img-main-5.png" alt="Raya Series">
+        </div>
+        <!-- Section RAYA SERIES -->
+        <h2 id="earlydays" class="image-with-title">EARLY DAYS</h2>
+        <div class="image-list">
+            <img src="assets/img/img-main-6.png" alt="Raya Series">
+        </div>
+        <!-- Section FOR YOU -->
+        <h2 id="foryou" class="image-with-title">FOR EVERY YOU COLLECTION</h2>
+        <div class="image-list">
+            <img src="assets/img/img-main-4.png" alt="Best Seller">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-center">
+            esteria &copy; 2025
+        </div>
+        <div class="footer-right">
+            <a href="#" aria-label="Shopee" class="social-icon shopee"></a>
+            <a href="#" aria-label="TikTok" class="social-icon tiktok"></a>
+            <a href="#" aria-label="Instagram" class="social-icon instagram"></a>
+            <a href="#" aria-label="Facebook" class="social-icon facebook"></a>
+            <a href="#" aria-label="WhatsApp" class="social-icon whatsapp"></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

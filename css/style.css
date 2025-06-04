@@ -1,0 +1,1124 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background: #FFFFFF;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.container {
+    background: #FFFFFF;
+    padding: 20px 20px 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 16px 80px;
+    margin: 0;
+    color: #000;
+}
+
+.navbar-left .logo {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 24px;
+    /* jarak antar item */
+}
+
+.navbar-right .nav-item {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.navbar-right .nav-item:hover {
+    color: #D9D9D9;
+    /* warna kuning saat hover */
+}
+
+.navbar-right .nav-item.disable {
+    color: #D9D9D9;
+    cursor: default;
+    pointer-events: none;
+}
+
+footer.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    z-index: 1000;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+/* Contoh placeholder logo sosmed, nanti ganti background-image dengan SVG kamu */
+.social-icon {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* Contoh warna background atau image untuk tiap logo, ganti dengan SVG asli kamu */
+.social-icon.shopee {
+    background-image: url('../assets/svg/ic-shopee.svg');
+}
+
+.social-icon.tiktok {
+    background-image: url('../assets/svg/ic-tiktok.svg');
+}
+
+.social-icon.instagram {
+    background-image: url('../assets/svg/ic-instagram.svg');
+}
+
+.social-icon.facebook {
+    background-image: url('../assets/svg/ic-fb.svg');
+}
+
+.social-icon.whatsapp {
+    background-image: url('../assets/svg/ic-wa.svg');
+}
+
+/* ========================================================== */
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 75px;
+    /* di bawah navbar */
+    left: 0;
+    width: 350px;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+    padding-top: 20px;
+    transform: translateX(-360px);
+    transition: transform 0.3s ease;
+    z-index: 1100;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 12px 0;
+}
+
+/* Sidebar links */
+.sidebar-menu li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 8px 80px;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Bottom menu (HELP dan ID | EN) */
+.sidebar-bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar-bottom a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.sidebar-bottom a:hover {
+    color: #ddd;
+}
+
+/* Toggle sidebar ketika checkbox dicentang */
+#sidebar-toggle:checked~.sidebar {
+    transform: translateX(0);
+}
+
+/* Label toggle sidebar (hamburger icon) */
+.sidebar-toggle-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 20px;
+    color: #000;
+}
+
+/* Optional: tambahkan overlay saat sidebar aktif */
+#sidebar-toggle:checked~.overlay {
+    display: block;
+}
+
+/* Overlay fullscreen untuk menutupi konten saat sidebar aktif */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1050;
+    cursor: pointer;
+}
+
+/* Responsive untuk layar kecil (opsional) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        height: 100vh;
+        top: 0;
+        padding-top: 60px;
+    }
+
+    .overlay {
+        top: 0;
+        height: 100vh;
+    }
+}
+
+/* ========================================================== */
+
+input,
+select,
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Gaya gambar umum */
+img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* ==== khusus untuk index.html ==== */
+
+.image-list img {
+    width: 100%;
+    object-fit: cover;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.image-with-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 128px 0 16px;
+    color: #333;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    /* ini buat center judul */
+}
+
+/* ==== khusus untuk home.html ==== */
+.product-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    padding: 40px 0 20px 0;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.search-wrapper {
+    max-width: 400px;
+    margin: 20px auto 30px auto;
+    /* atas 20, bawah 30, center horizontal */
+    text-align: center;
+}
+
+#search-input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border: 2px solid #D9D9D9;
+    border-radius: 8px;
+    outline: none;
+    background-image: url('../assets/svg/ic-search.svg');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 kolom */
+    gap: 40px 80px;
+    padding-bottom: 40px;
+}
+
+.product-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    padding-bottom: 20px;
+    position: relative;
+    /* agar overlay bisa absolute di dalamnya */
+    /* padding bottom 20 */
+}
+
+.size-overlay {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.product-item:hover .size-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.product-item:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 100%;
+    /* supaya gambar penuh lebar container */
+    height: 300px;
+    /* tinggi tetap */
+    object-fit: cover;
+    /* supaya gambar crop pas */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 8px;
+}
+
+.product-item .product-name,
+.product-item .product-price {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding: 0 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== bisa ditambah style lain untuk detail.html dll ===== */
+
+/* Khusus untuk halaman detail produk */
+/* #productDetail {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#productDetail img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#productDetail h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#productDetail p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#productDetail button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#productDetail button:hover {
+    background-color: #0056b3;
+} */
+
+/* Khusus untuk halaman detail produk */
+#productDetail {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    text-align: left;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+#productDetail .left {
+    flex: 1;
+    /* fix width 40% */
+    min-width: 500px;
+    /* supaya gak terlalu kecil */
+}
+
+#productDetail .left img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+#productDetail .left .thumbnails {
+    display: flex;
+    gap: 10px;
+    /* ini gap akan dikurangi karena space-between */
+    margin-top: 15px;
+    justify-content: space-between;
+    /* thumbnails tersebar rata */
+}
+
+#productDetail .left .thumbnails img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+
+#productDetail .left .thumbnails img:hover {
+    border-color: #000;
+    transform: scale(1.05);
+}
+
+#productDetail .right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#productDetail h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#productDetail h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#productDetail p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-block {
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-block .label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.info-block .value {
+    font-size: 15px;
+    color: #333;
+}
+
+.colors {
+    margin: 16px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.color-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.color-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1.5px solid #ccc;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+    width: 140px;
+    justify-content: flex-start;
+}
+
+.color-option:hover {
+    border: 1.5px solid #000;
+    transform: scale(1.05);
+}
+
+.color-option img {
+    width: 50px;
+    height: 65px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.product-details {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-details .detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+.product-details .label {
+    font-weight: 500;
+    /* bisa tambahkan fixed width biar rata */
+    width: 140px;
+    /* opsional: text-align kanan biar rapih */
+    text-align: left;
+    padding-right: 8px;
+}
+
+.product-details .value {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.navbar-right .cart-icon {
+    position: relative;
+    /* buat anchor jadi relative */
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar-right .cart-icon img {
+    width: 28px;
+    height: 28px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -6px;
+    right: -12px;
+    /* geser lebih ke kanan */
+    background-color: #E02954;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 50%;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+.color-info {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.buttons button {
+    width: 150px;
+    /* Lebar fixed 100px */
+    padding: 10px 0;
+    /* Vertikal padding */
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Buy Now: Hitam background, putih teks */
+.buttons .buy-now {
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+
+.buttons .buy-now:hover {
+    background-color: #333333;
+    transform: scale(1.1);
+}
+
+/* Add to Cart: Putih background, hitam teks, border hitam */
+.buttons .add-to-cart {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.buttons .add-to-cart:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.1);
+}
+
+/* Khusus untuk halaman cart shopping */
+#shopping-bag-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#cart>div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-item-img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cart-item-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.cart-item-price-qty {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.cart-item-actions button {
+    background-color: #ddd;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.cart-item-actions button:hover {
+    background-color: #ccc;
+    /* kamu bisa ganti jadi #e0e0e0 untuk lebih soft */
+    transform: scale(1.1);
+    /* efek membesar sedikit saat hover */
+}
+
+/* Optional: Active effect */
+.cart-item-actions button:active {
+    background-color: #bbb;
+    transform: scale(0.95);
+}
+
+.btn-plus {
+    background-image: url('../assets/svg/ic-plus.svg');
+}
+
+.btn-minus {
+    background-image: url('../assets/svg/ic-min.svg');
+}
+
+#total-cart {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    color: #333;
+}
+
+#checkout-btn {
+    background-color: #000000;
+    /* hitam */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+#checkout-btn:hover {
+    background-color: #333333;
+    /* abu-abu gelap saat hover */
+}
+
+
+/* Khusus untuk halaman payment */
+#paymentItems,
+#paymentMethodCard {
+    box-sizing: border-box;
+}
+
+/* Bungkus kiri dan kanan */
+.payment-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Bagian kiri - order summary */
+#paymentItems {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    min-width: 280px;
+    /* max-width: 600px; → dihapus supaya bisa full lebar */
+}
+
+#paymentItems h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+
+/* Styling untuk shipping address */
+.shipping-address {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shipping-address h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.shipping-address h4 {
+    margin-top: 0;
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #222;
+}
+
+.shipping-address p {
+    margin: 0;
+}
+
+/* Card tiap item produk */
+#paymentItems .item-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#paymentItems .item-card:hover {
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.12);
+}
+
+/* #paymentItems .item-card img {
+    width: 120px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex-shrink: 0;
+} */
+
+#paymentItems .item-card img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+#paymentItems .item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* Bagian kanan - payment method card */
+#paymentMethodCard {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-left: auto;
+}
+
+/* Judul payment method */
+#paymentMethodCard h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+
+/* Style radio button list */
+.payment-method-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+/* Customize radio button agar jadi hitam */
+.payment-method-option input[type="radio"] {
+    margin-right: 12px;
+    cursor: pointer;
+    accent-color: #000000;
+    /* CSS modern untuk warna radio */
+    width: 18px;
+    height: 18px;
+}
+
+/* Bagian bawah: subtotal + shipping fee */
+.payment-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.payment-summary-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Container tombol Pay */
+.payment-button-container {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.payment-button-container button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.payment-button-container button:hover {
+    background-color: #333333;
+}
+
+/* Khusus untuk halaman order history */
+
+.order-item {
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Header bar (Order ID & Status) */
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.order-id {
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.order-status select {
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+/* Subheader (Tanggal & Metode Pembayaran) */
+.order-subheader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Item detail with image and info */
+.order-item-detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-image {
+    height: 150px;
+    object-fit: cover;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-name {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.product-qty {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer (Total & Button Track) */
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    gap: 10px;
+}
+
+.total-text {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.total-price {
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 6px;
+    flex-grow: 1;
+}
+
+.track-btn {
+    padding: 8px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: auto;
+    min-width: 70px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.track-btn:hover {
+    background-color: #333333;
+}
+
+.track-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+.tab-bar {
+    display: flex;
+    padding: 0 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+    flex-shrink: 1;
+    flex-grow: 0;
+    min-width: auto;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    color: #000;
+}
+
+.tab-btn.active {
+    color: #ddd;
+    font-weight: 500;
+}
+
+.empty-message {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #ccc;
+}

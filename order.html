@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Order history</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadOrderHistory()">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo">LIVOU</a>
+        </div>
+        <div class="navbar-right">
+            <a href="home.html" class="nav-item">SEARCH</a>
+            <a href="cart.html" class="nav-item">CART</a>
+            <a href="order.html" class="nav-item disable">ORDER</a>
+            <a href="login.html" class="nav-item">LOGIN</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="search-wrapper">
+            <input type="search" id="search-input" placeholder="Search products..." />
+        </div>
+        <h2 class="product-title">MY ORDERS</h2>
+        <div class="tab-bar">
+            <button class="tab-btn active" data-status="all" onclick="filterOrders('all', this)">All Orders</button>
+            <button class="tab-btn" data-status="Confirmed" onclick="filterOrders('Confirmed', this)">Confirmed</button>
+            <button class="tab-btn" data-status="Packed" onclick="filterOrders('Packed', this)">Packed</button>
+            <button class="tab-btn" data-status="Shipped" onclick="filterOrders('Shipped', this)">Shipped</button>
+            <button class="tab-btn" data-status="Delivered" onclick="filterOrders('Delivered', this)">Delivered</button>
+            <button class="tab-btn" data-status="Returned" onclick="filterOrders('Returned', this)">Returned</button>
+            <button class="tab-btn" data-status="Cancelled" onclick="filterOrders('Cancelled', this)">Cancelled</button>
+        </div>
+        <div id="orderHistory"></div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-center">
+            esteria &copy; 2025
+        </div>
+        <div class="footer-right">
+            <a href="#" aria-label="Shopee" class="social-icon shopee"></a>
+            <a href="#" aria-label="TikTok" class="social-icon tiktok"></a>
+            <a href="#" aria-label="Instagram" class="social-icon instagram"></a>
+            <a href="#" aria-label="Facebook" class="social-icon facebook"></a>
+            <a href="#" aria-label="WhatsApp" class="social-icon whatsapp"></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo">LIVOU</a>
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="nav-item disable">SEARCH</a>
+            <a href="cart.html" class="nav-item">CART</a>
+            <a href="order.html" class="nav-item">ORDER</a>
+            <a href="login.html" class="nav-item">LOGIN</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <h2>Welcome, <span id="user"></span></h2>
+        <div class="search-wrapper">
+            <input type="search" id="search-input" placeholder="Search products..." />
+        </div>
+        <h2 class="product-title">YOU MAY BE INTERESTED IN</h2>
+        <div id="products"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-center">
+            esteria &copy; 2025
+        </div>
+        <div class="footer-right">
+            <a href="#" aria-label="Shopee" class="social-icon shopee"></a>
+            <a href="#" aria-label="TikTok" class="social-icon tiktok"></a>
+            <a href="#" aria-label="Instagram" class="social-icon instagram"></a>
+            <a href="#" aria-label="Facebook" class="social-icon facebook"></a>
+            <a href="#" aria-label="WhatsApp" class="social-icon whatsapp"></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
